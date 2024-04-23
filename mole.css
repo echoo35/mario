@@ -1,0 +1,41 @@
+/* Bu stil sayfası, HTML dosyasındaki bileşenlerin görünümünü kontrol eder. */
+
+/* Tüm sayfa boyunca genel ayarlar */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Metin fontu Arial, Helvetica, ya da bir sans-serif fontu olarak ayarlanır. */
+    text-align: center; /* Metinlerin sayfa ortasında hizalanması sağlanır. */
+    background: url("./mario-bg.jpg"); /* Arka plan resmi olarak mario-bg.jpg dosyası atanır. */
+    background-size: cover; /* Arka plan resmi, sayfa boyunca kaplaması için ölçeklenir. */
+}
+
+/* Oyun tahtası alanı için stil */
+#board {
+    width: 540px; /* Tahta genişliği 540 piksel olarak ayarlanır. */
+    height: 540px; /* Tahta yüksekliği 540 piksel olarak ayarlanır. */
+    margin: 0 auto; /* Tahtanın sayfa içinde yatay olarak ortalanması sağlanır. */
+    display: flex; /* Flexbox modeli kullanılarak içeriklerin düzeni sağlanır. */
+    flex-wrap: wrap; /* İçeriklerin sığmaması durumunda sarma (wrap) yapılır. */
+    background: url("./soil.png"); /* Arka plan olarak toprak görüntüsü atanır. */
+    background-size: cover; /* Arka plan resmi, tahta boyunca kaplaması için ölçeklenir. */
+    border: 3px solid white; /* Tahta etrafına 3 piksel kalınlığında beyaz kenarlık eklenir. */
+    border-radius: 25px; /* Tahta köşelerine 25 piksel yarıçaplı köşe yuvarlaması eklenir. */
+}
+
+/* Oyun tahtasındaki hücreler için stil */
+#board div {
+    width: 180px; /* Her hücrenin genişliği 180 piksel olarak ayarlanır. */
+    height: 180px; /* Her hücrenin yüksekliği 180 piksel olarak ayarlanır. */
+    background-image: url("./pipe.png"); /* Her hücreye boru resmi atanır. */
+    background-size: cover; /* Her hücreye atanmış boru resmi, hücreyi kaplaması için ölçeklenir. */
+}
+
+/* Oyun tahtasındaki resimler için stil */
+#board div img {
+    width: 100px; /* İçerideki resimlerin genişliği 100 piksel olarak ayarlanır. */
+    height: 100px; /* İçerideki resimlerin yüksekliği 100 piksel olarak ayarlanır. */
+    user-select: none; /* Kullanıcının içerikleri seçmesi engellenir. */
+    -moz-user-select: none; /* Mozilla Firefox için içerik seçme engelleme özelliği eklenir. */
+    -webkit-user-drag: none; /* WebKit tabanlı tarayıcılar için içerik sürükleme engelleme özelliği eklenir. */
+    -webkit-user-select: none; /* WebKit tabanlı tarayıcılar için içerik seçme engelleme özelliği eklenir. */
+    -ms-user-select: none; /* Microsoft Edge için içerik seçme engelleme özelliği eklenir. */
+}
